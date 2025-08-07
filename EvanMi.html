@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evan's Domain Name</title>
+    <style>
+
+        *{margin:0;padding:0;box-sizing:border-box;}
+        body{
+            font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif;
+            background:#ffffff;color:#09090b;min-height:100vh;padding:20px;
+            position:relative;
+        }
+        #bg-canvas{
+            position:fixed;inset:0;z-index:-1;pointer-events:none;
+        }
+
+        .container{max-width:1200px;margin:0 auto;}
+        .header{text-align:center;margin-bottom:40px;}
+        .header h1{font-size:2.5rem;color:#09090b;font-weight:600;margin-bottom:10px;}
+        .theme-toggle{
+            position:fixed;top:20px;right:20px;background:#fff;border:1px solid #e4e4e7;
+            border-radius:50%;width:50px;height:50px;font-size:1.5rem;cursor:pointer;
+            box-shadow:0 1px 3px rgba(0,0,0,.1);transition:all .2s;z-index:1000;
+        }
+        .theme-toggle:hover{box-shadow:0 4px 12px rgba(0,0,0,.15);}
+        .section{margin-bottom:40px;}
+        .section-title{font-size:1.5rem;color:#09090b;font-weight:600;border-left:3px solid #d5d5d5;padding-left:15px;margin-bottom:20px;}
+        .cards-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;}
+        .card{background:#fff;border:1px solid #e4e4e7;border-radius:8px;padding:20px;transition:all .2s;text-decoration:none;color:inherit;display:block;}
+        .card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.1);border-color:#3b82f6;}
+        .card-title{font-size:1.1rem;font-weight:600;margin-bottom:8px;color:#09090b;}
+        .card-description{font-size:.9rem;color:#71717a;line-height:1.4;}
+        .footer{text-align:center;margin-top:60px;padding:20px;color:#71717a;font-size:.9rem;}
+        .footer a{color:#71717a;text-decoration:none;}
+        .footer a:hover{text-decoration:none;}
+
+
+        .dark-theme{background:#09090b;color:#fafafa;}
+        .dark-theme .header h1{color:#fafafa;}
+        .dark-theme .card{background:#18181b;border-color:#27272a;color:#fafafa;}
+        .dark-theme .card:hover{border-color:#3b82f6;}
+        .dark-theme .card-title{color:#fafafa;}
+        .dark-theme .card-description{color:#a1a1aa;}
+        .dark-theme .section-title{color:#fafafa;border-color:#3f3f46;}
+        .dark-theme .theme-toggle{background:#18181b;border-color:#27272a;color:#fafafa;}
+        .dark-theme .footer{color:#a1a1aa;}
+
+
+        @media(max-width:768px){
+            .header h1{font-size:2rem;}
+            .cards-grid{grid-template-columns:1fr;}
+            .theme-toggle{width:45px;height:45px;font-size:1.3rem;}
+        }
+    </style>
+</head>
+<body>
+
+    <canvas id="bg-canvas"></canvas>
+
+    <button class="theme-toggle" onclick="toggleTheme()">🌗</button>
+
+    <div class="container">
+        <header class="header">
+            <h1>Evan's Domain Name</h1>
+        </header>
+        <section class="section">
+            <h2 class="section-title">域名</h2>
+            <div class="cards-grid">
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">YIRI.ORG</div>
+                    <div class="card-description">yiri.org・一日三秋</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">ZUN.IM</div>
+                    <div class="card-description">zun.im・循道而尊</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">LIAOLIAO.SPACE</div>
+                    <div class="card-description">liaoliao.space・聊聊空间</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">BOKEBANG.COM</div>
+                    <div class="card-description">bokebang.com・博/播客帮</div>
+                </a>
+                <a href="https://focusgame.org" class="card" target="_blank">
+                    <div class="card-title">FOCUSGAME.ORG</div>
+                    <div class="card-description">focusgame.org・专注游戏｜可访</div>
+                </a>
+                <a href="https://urls.best" class="card" target="_blank">
+                    <div class="card-title">URLS.BEST</div>
+                    <div class="card-description">urls.best・最牛URL｜可访</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">DFT.IM</div>
+                    <div class="card-description">dft.im・炖粉条/豆腐汤</div>
+                </a>
+                <a href="https://baa.ee" class="card" target="_blank">
+                    <div class="card-title">BAA.EE</div>
+                    <div class="card-description">baa.ee・咩咩咩｜可访</div>
+                </a>
+                <a href="https://dun.ge" class="card" target="_blank">
+                    <div class="card-title">DUN.GE</div>
+                    <div class="card-description">dun.ge・Dun哥｜可访</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">NING.SI</div>
+                    <div class="card-description">ning.si・凝思</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">YMS.IM</div>
+                    <div class="card-description">yms.im・羊毛社｜薅羊毛论坛</div>
+                </a>
+                <a href="https://jiaocai.xyz" class="card" target="_blank">
+                    <div class="card-title">JIAOCAI.XYZ</div>
+                    <div class="card-description">jiaocai.xyz・教材｜可访</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">DEEPSEEKMV.COM</div>
+                    <div class="card-description">deepseekmv.com・深寻mv</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">VGOO.CN</div>
+                    <div class="card-description">vgoo.cn・微购/未够</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">BUZUO.CN</div>
+                    <div class="card-description">buzuo.cn・不坐/不做/不作</div>
+                </a>
+                <a href="" class="card" target="_blank">
+                    <div class="card-title">LVKE.ME</div>
+                    <div class="card-description">lvke.me・旅客</div>
+                </a>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">链接</h2>
+            <div class="cards-grid">
+                <a href="https://evan.plus" class="card" target="_blank">
+                    <div class="card-title">Evan's Nav</div>
+                    <div class="card-description">精美的开源私有化导航</div>
+                </a>
+                <a href="https://edc.plus" class="card" target="_blank">
+                    <div class="card-title">EDC.PLUS</div>
+                    <div class="card-description">随身装备EDC｜可售</div>
+                </a>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <p>© 2025 <a href="https://www.evan.xin/card.html" target="_blank" >Evan.Top・Contact</a></p>
+        </footer>
+    </div>
+
+    <script>
+
+        (function(){
+            const cvs = document.getElementById('bg-canvas'),
+                  ctx = cvs.getContext('2d'),
+                  dpr = window.devicePixelRatio || 1;
+            let w, h, particles = [];
+
+            function resize(){
+                w = cvs.width  = innerWidth  * dpr;
+                h = cvs.height = innerHeight * dpr;
+                ctx.scale(dpr, dpr);
+                cvs.style.width  = innerWidth  + 'px';
+                cvs.style.height = innerHeight + 'px';
+            }
+            window.addEventListener('resize', resize);
+
+            class P {
+                constructor(){
+                    this.x = Math.random() * innerWidth;
+                    this.y = Math.random() * innerHeight;
+                    this.vx = (Math.random() - .5) * .3;
+                    this.vy = (Math.random() - .5) * .3;
+                    this.r = Math.random() * 1.2 + .5;
+                }
+                update(){
+                    this.x += this.vx;
+                    this.y += this.vy;
+                    if(this.x < 0 || this.x > innerWidth) this.vx *= -1;
+                    if(this.y < 0 || this.y > innerHeight) this.vy *= -1;
+                }
+                draw(){
+                    ctx.beginPath();
+                    ctx.arc(this.x, this.y, this.r, 0, Math.PI*2);
+                    ctx.fillStyle = isDark() ? 'rgba(255,255,255,0.4)' : 'rgba(0,0,0,0.25)';
+                    ctx.fill();
+                }
+            }
+
+            function isDark(){
+                return document.body.classList.contains('dark-theme');
+            }
+
+            function drawLines(){
+                for(let i=0;i<particles.length;i++){
+                    for(let j=i+1;j<particles.length;j++){
+                        const dx = particles[i].x - particles[j].x,
+                              dy = particles[i].y - particles[j].y,
+                              dist = Math.sqrt(dx*dx + dy*dy);
+                        if(dist < 100){
+                            ctx.beginPath();
+                            ctx.moveTo(particles[i].x, particles[i].y);
+                            ctx.lineTo(particles[j].x, particles[j].y);
+                            ctx.strokeStyle = isDark()
+                                ? `rgba(255,255,255,${1-dist/100})`
+                                : `rgba(0,0,0,${.5-dist/200})`;
+                            ctx.lineWidth = .5;
+                            ctx.stroke();
+                        }
+                    }
+                }
+            }
+
+            function init(){
+                resize();
+                particles = Array.from({length: Math.floor(innerWidth*innerHeight/18000)}, ()=>new P());
+                animate();
+            }
+
+            function animate(){
+                ctx.clearRect(0,0,innerWidth,innerHeight);
+                particles.forEach(p=>{p.update();p.draw();});
+                drawLines();
+                requestAnimationFrame(animate);
+            }
+
+            init();
+        })();
+
+        function toggleTheme() {
+            document.body.classList.toggle('dark-theme');
+            const isDark = document.body.classList.contains('dark-theme');
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        }
+        document.addEventListener('DOMContentLoaded', () => {
+            if(localStorage.getItem('theme') === 'dark') document.body.classList.add('dark-theme');
+        });
+    </script>
+</body>
+</html>
