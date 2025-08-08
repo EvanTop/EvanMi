@@ -24,7 +24,7 @@ EvanMi是我的个人域名「米表」
 ## 其他信息
 - 演示网站：[EvanMi](https://evan.xin/mi.html) 
 
-- 公众号（解压密码在公众号中发nav获取）：
+- 公众号：
 - ![公众号](https://www.evan.xin/wp-content/uploads/2025/04/111.png)
 - 打赏码(微信&支付宝二合一，方便哈哈)：
 - ![公众号](https://www.evan.xin/wp-content/uploads/2025/05/wechat-alipay.png)
