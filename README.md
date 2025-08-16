@@ -22,7 +22,7 @@ EvanMi是我的个人域名「米表」
 ![img2](https://i.imgur.com/y5DWtPt.png)
 
 ## 其他信息
-- 演示网站：[EvanMi](evanmi.top) 
+- 演示网站：https://evanmi.top
 
 - 公众号：
 - ![公众号](https://www.evan.xin/wp-content/uploads/2025/04/111.png)
