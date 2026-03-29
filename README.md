@@ -13,7 +13,7 @@
     </a>
 </div>
 
-# EvanMi：把域名清单做成一个“好看又好用”的米表
+## EvanMi 9.0：支持后台管理的开源米表
 
 - [详情页下载](https://github.com/EvanTop/EvanMi/releases/edit/EvanMi_V9)
 - [EvanMi.zip](https://github.com/user-attachments/files/26330773/EvanMi.zip)
@@ -63,7 +63,7 @@
 ---
 
 
-- # Mi.CD（宝塔面板）部署教程
+- # EvanMi（宝塔面板）部署教程
 
 
 ## 1. 部署包内容说明（你会用到的几个文件）
