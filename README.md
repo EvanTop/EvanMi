@@ -19,8 +19,8 @@ EvanMi是我的个人域名「米表」
 页面以深色/浅色双主题粒子背景为视觉核心，安静流动的连线粒子像域名之间若隐若现的关联，卡片式布局让域名一目了然，点击即可直达。
 # EvanMi：把域名清单做成一个“好看又好用”的米表
 
-[详情页，直接下载](https://github.com/EvanTop/EvanMi/releases/edit/EvanMi_V9)
-[EvanMi.zip](https://github.com/user-attachments/files/26330773/EvanMi.zip)
+- [详情页下载](https://github.com/EvanTop/EvanMi/releases/edit/EvanMi_V9)
+- [EvanMi.zip](https://github.com/user-attachments/files/26330773/EvanMi.zip)
 
 <img width="1123" height="1123" alt="1" src="https://github.com/user-attachments/assets/18dd54fd-c8a3-40be-8a04-14c09188f052" />
 <img width="1123" height="1123" alt="2" src="https://github.com/user-attachments/assets/765c7432-a6c9-4ce2-a1bb-f1be84038287" />
